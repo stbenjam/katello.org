@@ -12,7 +12,7 @@ namespace :test do
       clone_url = details['base']['repo']['clone_url']
 
       start = Dir.pwd
-      sh "git clone #{clone_url} pr_test"
+      sh "git clone http://github.com/stbenjam/katello.org pr_test"
       Dir.chdir 'pr_test'
       sh "git checkout #{target}"
       sh "git fetch origin +refs/pull/#{pr}/merge"
