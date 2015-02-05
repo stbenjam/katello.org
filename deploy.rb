@@ -39,7 +39,7 @@ class Deployer
 
   def clone_version(version)
     Dir.chdir(BUILD_DIR) do
-      syscall("git clone git://github.com/Katello/katello.org #{version}")
+      syscall("git clone git://github.com/stbenjam/katello.org #{version}")
     end
   end
 
